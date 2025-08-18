@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grace & Light Ministry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events-calendar">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Welcome to Grace & Light</h1>
+    <p>Empowering lives through faith, service, and community.</p>
+   <button onclick="scrollToSection('join')">🕊️ Join Us</button>
+  </section>
+
+  <section id="about">
+    <h2>About Grace & Light</h2>
+    <p>We are a prophetic ministry rooted in love, worship, and bold identity. Our calling is to awaken hearts, restore hope, and empower every believer to walk in their divine purpose.</p>
+    <blockquote>“The righteous are bold as a lion.” — Proverbs 28:1</blockquote>
+    <ul>
+      <li>🕊️ Spirit-led worship that invites Heaven to earth</li>
+      <li>🤝 Outreach that transforms lives through compassion</li>
+      <li><span class="lion-emoji">🦁</span> Prophetic identity that awakens your roar</li>
+      <li>🌟 Fellowship that builds lasting spiritual family</li>
+    </ul>
+    <p>Come as you are—and leave ignited. You were never meant to blend in. You were born to shine.</p>
+  </section>
+
+  <section id="events-calendar">
+    <h2>📅 Ministry Gatherings</h2>
+    <p>Join us for weekly rhythms and special moments of encounter, service, and prophetic activation.</p>
+
+    <div class="recurring-events">
+      <h3>✨ Weekly Rhythms</h3>
+      <ul>
+        <li><strong>Sunday Worship</strong> – Every Sunday at <em>10 AM</em> in the Sanctuary</li>
+        <li><strong>Youth Night</strong> – Fridays at <em>6 PM</em> in the Main Hall</li>
+        <li><strong>Community Outreach</strong> – First Saturday of each month at <em>10 AM</em> in Downtown Mesa</li>
+      </ul>
+    </div>
+
+    <div class="calendar-events">
+      <h3>🌟 Upcoming Highlights</h3>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aug 24, 2025</td>
+            <td>Youth Night</td>
+            <td>6:00 PM</td>
+            <td>Main Hall</td>
+          </tr>
+          <tr>
+            <td>Sep 1, 2025</td>
+            <td>Community Outreach</td>
+            <td>10:00 AM</td>
+            <td>Downtown Mesa</td>
+          </tr>
+          <tr>
+            <td>Sep 7, 2025</td>
+            <td>Sunday Worship</td>
+            <td>10:00 AM</td>
+            <td>Sanctuary</td>
+          </tr>
+          <tr>
+            <td>Sep 13, 2025</td>
+            <td>Prophetic Workshop</td>
+            <td>2:00 PM</td>
+            <td>Prayer Room</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="join">
+    <h2>Join the Ministry</h2>
+    <p>Whether you're seeking deeper faith, community, or a place to serve—we welcome you with open arms. Grace & Light is a home for the bold, the broken, and the called.</p>
+    <ul>
+      <li>🕊️ Attend our weekly worship gatherings</li>
+      <li>🤝 Volunteer in outreach and prayer teams</li>
+      <li>🦁 Discover your prophetic identity and roar like the lion you are</li>
+    </ul>
+    <a href="connect.html" class="cta-button">Get Connected</a>
+  </section>
+
+  <section id="prayer-request">
+    <h2>Submit a Prayer Request</h2>
+    <p>We believe in the power of prayer. Share your request and our ministry team will lift it up before the Lord.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Prayer Request" required></textarea>
+      <button type="submit">Send Prayer</button>
+    </form>
+  </section>
+
+<section id="prophetic">
+  <h2>You are a Lion<span class="lion-emoji">🦁</span></h2>
+  <blockquote>“The righteous are bold as a lion.” — Proverbs 28:1</blockquote>
+  <p>The Lord says: You will roar back. You will soar like an eagle. You will decree what Heaven has written about you.</p>
+  <p>You’ve been seen as a kitty cat, but the Lord says you’re a lion. The Lion of Judah roars within you. Your past has roared at you—but now, you roar back.</p>
+  <p><em>“It’s your time of coming out,” says the Lord. “Arise and shine, for My glory is risen upon you.”</em></p>
+</section>
+
+  <section id="worship">
+    <h2>Worship With Us</h2>
+    <p><strong>Daily Word:</strong> “Arise and shine, for your light has come.” — Isaiah 60:1</p>
+    <p><strong>Prophetic Words:</strong> “You’ve been seen as a kitty cat, but the Lord says you’re a lion.” — Apostle Rob Winters</p>
+    <a href="#">Read Full Prophecy</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Whether you have questions, want to get involved, or simply need prayer—reach out and let’s connect.</p>
+    <ul>
+      <li>📧 Email: hello@graceandlight.org</li>
+      <li>📍 Location: Mesa, AZ</li>
+      <li>📞 Phone: (480) 555-1234</li>
+    </ul>
+  </section>
+  
+  <audio id="roar-sound" src="lion-roar.mp3" preload="auto"></audio>
+<script>
+  const lion = document.querySelector('.lion-emoji');
+  const roar = document.getElementById('roar-sound');
+
+  lion.addEventListener('mouseenter', () => {
+    roar.currentTime = 0;
+    roar.play();
+  });
+</script>
+
+
+  <footer>
+    <p>© 2025 Grace & Light Ministry. All rights reserved.</p>
+  </footer>
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+

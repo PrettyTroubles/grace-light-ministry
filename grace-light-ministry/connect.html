@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Connected | Grace & Light Ministry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#form">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="vision">
+    <h1>Get Connected</h1>
+    <p>We believe every person is called to shine. Whether you're new to faith, returning to community, or ready to serve—we welcome you with open arms.</p>
+    <blockquote>“You are the light of the world. A city on a hill cannot be hidden.” — Matthew 5:14</blockquote>
+    <ul>
+      <li>🕊️ Join a worship gathering</li>
+      <li>🤝 Volunteer in outreach or prayer teams</li>
+      <li>🦁 Discover your prophetic identity</li>
+    </ul>
+  </section>
+
+  <section id="form">
+    <h2>Let’s Connect</h2>
+    <p>Fill out the form below and we’ll reach out with next steps.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <select required>
+        <option value="">I'm interested in...</option>
+        <option value="worship">Joining Worship</option>
+        <option value="volunteer">Volunteering</option>
+        <option value="prayer">Receiving Prayer</option>
+        <option value="prophetic">Prophetic Identity</option>
+      </select>
+      <textarea placeholder="Tell us more..." rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <a href="index.html">← Back to Home</a>
+    <p>© 2025 Grace & Light Ministry. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for reaching out! We’ll be in touch soon.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
