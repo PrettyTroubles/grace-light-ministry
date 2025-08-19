@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -236,3 +237,243 @@ footer a {
 
 
 
+=======
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6f0;
+  color: #1a1a2e;
+}
+
+header {
+  background-color: #1a1a2e;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ffe9d6, #fff5e1);
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#hero button {
+  background-color: #ffd369;
+  color: #1a1a2e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero button:hover {
+  background-color: #ffb347;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+#join {
+  background-color: #fffbe6;
+  border-left: 6px solid #ffd369;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#join h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#join ul {
+  list-style: none;
+  padding: 0;
+}
+
+#join li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #1a1a2e;
+  color: #ffd369;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+footer a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact {
+  background-color: #fffaf2;
+  padding: 3rem 2rem;
+  border-top: 4px solid #ffd369;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.event-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.event-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.event-list li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+}
+
+#calendar {
+  background-color: #fffaf2;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.calendar-table th {
+  background-color: #fceabb;
+  font-weight: bold;
+}
+
+@keyframes lionGlow {
+  0% { transform: scale(1) rotate(0deg); text-shadow: 0 0 5px gold; }
+  25% { transform: scale(1.1) rotate(-2deg); text-shadow: 0 0 15px orange; }
+  50% { transform: scale(1.1) rotate(2deg); text-shadow: 0 0 15px orange; }
+  75% { transform: scale(1.1) rotate(-2deg); text-shadow: 0 0 15px orange; }
+  100% { transform: scale(1) rotate(0deg); text-shadow: 0 0 5px gold; }
+}
+
+.lion-emoji {
+  display: inline-block;
+  animation: lionGlow 2.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+.lion-animate {
+  display: inline-block;
+  animation: roarPulse 0.6s ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes roarPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+>>>>>>> 08e889350887b74f12e678976f5b710b9a6c34fd
